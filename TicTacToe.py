@@ -67,24 +67,24 @@ while condition:
     if turn % 2 == 0:
         sign = "X"
 
-        if m[2][0] == "_" and user_move[0] == "1" and user_move[1] == "1":
-            m[2][0] = sign
-            print_board()
-            big_check()
-
-        elif m[1][0] == "_" and user_move[0] == "1" and user_move[1] == "2":
-            m[1][0] = sign
-            print_board()
-            big_check()
-
-
-        elif m[0][0] == "_" and user_move[0] == "1" and user_move[1] == "3":
+        if m[0][0] == "_" and user_move[0] == "1" and user_move[1] == "1":
             m[0][0] = sign
             print_board()
             big_check()
 
-        elif m[2][1] == "_" and user_move[0] == "2" and user_move[1] == "1":
-            m[2][1] = sign
+        elif m[0][1] == "_" and user_move[0] == "1" and user_move[1] == "2":
+            m[0][1] = sign
+            print_board()
+            big_check()
+
+
+        elif m[0][2] == "_" and user_move[0] == "1" and user_move[1] == "3":
+            m[0][2] = sign
+            print_board()
+            big_check()
+
+        elif m[1][0] == "_" and user_move[0] == "2" and user_move[1] == "1":
+            m[1][0] = sign
             print_board()
             big_check()
 
@@ -95,26 +95,26 @@ while condition:
             big_check()
 
 
-        elif m[0][1] == "_" and user_move[0] == "2" and user_move[1] == "3":
-            m[0][1] = sign
-            print_board()
-            big_check()
-
-
-        elif m[2][2] == "_" and user_move[0] == "3" and user_move[1] == "1":
-            m[2][2] = sign
-            print_board()
-            big_check()
-
-
-        elif m[1][2] == "_" and user_move[0] == "3" and user_move[1] == "2":
+        elif m[1][2] == "_" and user_move[0] == "2" and user_move[1] == "3":
             m[1][2] = sign
             print_board()
             big_check()
 
 
-        elif m[0][2] == "_" and user_move[0] == "3" and user_move[1] == "3":
-            m[0][2] = sign
+        elif m[2][0] == "_" and user_move[0] == "3" and user_move[1] == "1":
+            m[2][0] = sign
+            print_board()
+            big_check()
+
+
+        elif m[2][1] == "_" and user_move[0] == "3" and user_move[1] == "2":
+            m[2][1] = sign
+            print_board()
+            big_check()
+
+
+        elif m[2][2] == "_" and user_move[0] == "3" and user_move[1] == "3":
+            m[2][2] = sign
             print_board()
             big_check()
 
@@ -133,24 +133,24 @@ while condition:
     else:
         sign = "O"
 
-        if m[2][0] == "_" and user_move[0] == "1" and user_move[1] == "1":
-            m[2][0] = sign
-            print_board()
-            big_check()
-
-        elif m[1][0] == "_" and user_move[0] == "1" and user_move[1] == "2":
-            m[1][0] = sign
-            print_board()
-            big_check()
-
-
-        elif m[0][0] == "_" and user_move[0] == "1" and user_move[1] == "3":
+        if m[0][0] == "_" and user_move[0] == "1" and user_move[1] == "1":
             m[0][0] = sign
             print_board()
             big_check()
 
-        elif m[2][1] == "_" and user_move[0] == "2" and user_move[1] == "1":
-            m[2][1] = sign
+        elif m[0][1] == "_" and user_move[0] == "1" and user_move[1] == "2":
+            m[0][1] = sign
+            print_board()
+            big_check()
+
+
+        elif m[0][2] == "_" and user_move[0] == "1" and user_move[1] == "3":
+            m[0][2] = sign
+            print_board()
+            big_check()
+
+        elif m[1][0] == "_" and user_move[0] == "2" and user_move[1] == "1":
+            m[1][0] = sign
             print_board()
             big_check()
 
@@ -161,26 +161,26 @@ while condition:
             big_check()
 
 
-        elif m[0][1] == "_" and user_move[0] == "2" and user_move[1] == "3":
-            m[0][1] = sign
-            print_board()
-            big_check()
-
-
-        elif m[2][2] == "_" and user_move[0] == "3" and user_move[1] == "1":
-            m[2][2] = sign
-            print_board()
-            big_check()
-
-
-        elif m[1][2] == "_" and user_move[0] == "3" and user_move[1] == "2":
+        elif m[1][2] == "_" and user_move[0] == "2" and user_move[1] == "3":
             m[1][2] = sign
             print_board()
             big_check()
 
 
-        elif m[0][2] == "_" and user_move[0] == "3" and user_move[1] == "3":
-            m[0][2] = sign
+        elif m[2][0] == "_" and user_move[0] == "3" and user_move[1] == "1":
+            m[2][0] = sign
+            print_board()
+            big_check()
+
+
+        elif m[2][1] == "_" and user_move[0] == "3" and user_move[1] == "2":
+            m[2][1] = sign
+            print_board()
+            big_check()
+
+
+        elif m[2][2] == "_" and user_move[0] == "3" and user_move[1] == "3":
+            m[2][2] = sign
             print_board()
             big_check()
 
