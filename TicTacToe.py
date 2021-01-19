@@ -1,26 +1,24 @@
 from string import digits
+
+def check(sign):
+    for i in range(3):
+        #check each Row for Win        #check each Column for win       #check each Diagonal for win
+        if m[i][0] == m[i][1] == m[i][2] == sign \
+        or m[0][i] == m[1][i] == m[2][i] == sign \
+        or m[0][0] == m[1][1] == m[2][2] == sign \
+        or m[0][2] == m[1][1] == m[2][0] == sign:
+            return True
          
 def big_check():
         global condition
         
-        if sign == "X":
-            #check each Row for Win        #check each Column for win       #check each Diagonal for win
-                for i in range(3):
-                     if (m[i][0] == m[i][1] == m[i][2] == sign)or\
-                        (m[0][i] == m[1][i] == m[2][i] == sign)or\
-                        (m[0][0] == m[1][1] == m[2][2] == sign or m[0][2] == m[1][1] == m[2][0] == sign):  
-                        print("X wins")
-                        condition = False
-                    
-        elif sign == "O":
-             #check each Row for Win        #check each Column for win       #check each Diagonal for win
-            for i in range(3):
-                if (m[i][0] == m[i][1] == m[i][2] == sign)or\
-                   (m[0][i] == m[1][i] == m[2][i] == sign)or\
-                   (m[0][0] == m[1][1] == m[2][2] == sign or m[0][2] == m[1][1] == m[2][0] == sign):   
-                    print("O wins")
-                    condition = False
-                    
+        global condition
+        if check("X"):
+            print("X wins")
+            condition = False
+        elif check("O"):
+            print("O wins")
+            condition = False
         elif "_" not in m[0] and "_" not in m[1] and "_" not in m[2]:
             print("Draw")
             condition = False
