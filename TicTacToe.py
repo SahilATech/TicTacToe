@@ -12,7 +12,6 @@ def check(sign):
 def big_check():
         global condition
         
-        global condition
         if check("X"):
             print("X wins")
             condition = False
